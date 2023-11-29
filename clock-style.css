@@ -1,3 +1,7 @@
+@font-face {
+    font-family: digital-font;
+    src: url(digital-7.ttf);
+}
 html{
     background: #018DED url(pexels-peng-liu-169647.jpg);
     background-size: cover;
@@ -67,6 +71,7 @@ body {
 }
 
 .digital-clock {
+    font-family: digital-font;
     font-size: 12rem;
     color: white;
     width: 400px;
