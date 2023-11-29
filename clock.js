@@ -3,7 +3,7 @@ const minuteHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
 function setClockFace(){
-
+    //now const variable is not gloval
     const now = new Date();
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds /60) * 360) + 90;
@@ -20,10 +20,10 @@ function setClockFace(){
     var time = padTwo(hours) + ":" + padTwo(minutes) + ":" + padTwo(seconds);
     const digitalClockFace = document.querySelector('.time');
     digitalClockFace.innerHTML = time;
-
+}
 
     unction padTwo(number){
         return (number < 10 ? '0' :'') + number;
         
 }
-etInterval(setClockFace,1000)
+etInterval(setClockFace,1000);
